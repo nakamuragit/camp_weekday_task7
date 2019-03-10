@@ -1,0 +1,13 @@
+<h2>新規論文投稿</h2>
+<%= form_with model: @article, local:true do |form| %>
+  <div>
+    <%= form.label "論文タイトル" %><br>
+    <%= form.text_field :title %>
+  </div>
+  <div><br>
+    <%= form.label "本文"%><br>
+    <%= form.text_area :body %>
+  </div>
+  <br>
+  <%= form.submit "投稿" %>
+<%end%>
