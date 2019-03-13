@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :set_post, only: [ :show, :edit, :update, :destroy]
+  
   def index
     @articles = Article.all
   end
@@ -32,7 +33,7 @@ class ArticlesController < ApplicationController
 
   private
 
-  def article_params 
+  def article_params
     params.require(:article).permit(:title, :body)
   end
 
