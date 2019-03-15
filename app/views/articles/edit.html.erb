@@ -1,0 +1,10 @@
+<h1>Edit posts</h1>
+<div class = "form-group mt-4">
+  <%= form_with model: @article, local: true do |form| %>
+    <%= form.label "title"%>
+    <p><%= form.text_field :title, class: "form-control" %></p><br>
+    <%= form.label "body"%><br>
+    <p><%= form.text_area :body, rows: "8", class: "form-control input-lg" %></p>
+    <%= form.submit "Update", class: "btn btn-primary col-12 bg-dark border-0"%>
+  <% end %>
+</div>

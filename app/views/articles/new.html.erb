@@ -1,0 +1,15 @@
+<h2>New posts</h2>
+<div class = "form-group mt-4">
+  <%= form_with model: @article, local:true do |form| %>
+    <div>
+      <%= form.label "title" %><br>
+      <%= form.text_field :title, class: "form-control" %>
+    </div>
+    <div><br>
+      <%= form.label "body"%><br>
+      <%= form.text_area :body, rows:"8", class: "form-control" %>
+    </div>
+    <br>
+    <%= form.submit "submit", class: "btn btn-primary col-12 bg-dark border-0" %>
+  <% end %>
+</div>
