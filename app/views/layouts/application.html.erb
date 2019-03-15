@@ -10,6 +10,10 @@
   </head>
 
   <body>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+　    <h1>ミニイグノーベル賞ポスト</h1>
+      <p>おもしろ論文のタイトルとアブストラクトの登録サイトです！</p>
+    </div>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <a class="navbar-brand" href="/articles">Articles</a>
       <div class="collapse navbar-collapse">
@@ -20,6 +24,16 @@
           </ul>
       </div>
     </nav>
-    <%= yield %>
+    <div class="row">
+      <div class="col-8 mr-1 ml-1 mt-4">
+        <div class="row mr-4 ml-4">
+          <div class="col-md-10 offset-1">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+      <div class="col-1 bg-dark"></div>
+      <div></div>
+    </div>
   </body>
 </html>
